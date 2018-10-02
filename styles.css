@@ -1,0 +1,50 @@
+body {
+    background-image: linear-gradient(to right top, #32e361, #32c34e, #2fa53d, #29872d, #216b1e);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 16px);
+    box-sizing: border-box;
+}
+
+.room {
+    position: relative;
+    background: aliceblue;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.row div {
+    width: 50px;
+    height: 50px;
+    box-shadow: 0px 0px 0px 1px #dedede;
+}
+
+.man {
+    background: url(man.png);
+    background-size: 100%;
+    width: 44px;
+    height: 44px;
+    margin: 3px;
+    position: absolute;
+    transition: all 0.2s ease-in-out;
+}
+
+.right {
+    transform: rotate(-90deg);
+}
+
+.left {
+    transform: rotate(90deg);
+}
+
+.top {
+    transform: rotate(180deg);
+}
+
+.bottom {
+    transform: rotate(0deg);
+}
